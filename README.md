@@ -59,7 +59,8 @@ body部分添加 
       console.log('made socket connection',socket.id) };
     );
     ```
-3. 到 https://cdnjs.com/libraries/socket.io 拷贝类似如下链接备用： https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js
+3. 到 https://cdnjs.com/libraries/socket.io 拷贝类似如下链接备用：
+ https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js
 4. [Atom]更新public/index.html以在客户端引用和调用socket.io：
     1. 在title下添加类似如下代码引用库： 
     ```
