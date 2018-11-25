@@ -48,11 +48,11 @@ body部分添加 
 安装和测试socket.io库
 1. [cmder]Web服务器端安装：nom install socket.io --save
 2. [Atom]更新根目录下index.js文件：
-    1. 头部添加引用：
+a. 头部添加引用：
 ```
  var socket = require('socket.io');
 ```
-    2. 底部添加调用： 
+b. 底部添加调用： 
 ```
 var io = socket(server); 
 io.on('connection',function(socket){ 
@@ -62,15 +62,15 @@ io.on('connection',function(socket){ 
 3. 到 https://cdnjs.com/libraries/socket.io 拷贝类似如下链接备用：
  https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js
 4. [Atom]更新public/index.html以在客户端引用和调用socket.io：
-    1. 在title下添加类似如下代码引用库： 
+a. 在title下添加类似如下代码引用库： 
 ```
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js"></script>
 ```
-    2. 在body中添加如下调用socket.io的外部脚本： 
+b. 在body中添加如下调用socket.io的外部脚本： 
 ```
 <script src="chat.js"></script>
 ```
-    3. 创建外部脚本文件public/chat.js： 
+c. 创建外部脚本文件public/chat.js： 
 ```
 var socket = io.connect('http://localhost:5000');
 ```
