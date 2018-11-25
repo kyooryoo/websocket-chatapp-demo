@@ -1,14 +1,14 @@
-#WebSocket
+# WebSocket
 提供网页浏览器客户端与服务器的双向通讯和实时数据交换，可用于多角色的网页游戏，合作编程和代码共享，新闻或体育网站的实时字幕，在线画布，实时多用户的任务管理程序。这里用WS创建一个基于NodeJS的在线聊天室软件，并提供文件共享功能。
 
-##第一部分
+## 第一部分
 
-###环境搭建：
+### 环境搭建：
 1. 编程环境：Atom
 2. 命令行工具：cmder 在Windows系统下使用
 3. 编程语言：NodeJS
 
-###初始化项目
+### 初始化项目
 1. [cmder]查看NodeJS版本：node -v
 2. [cmder]创建本地项目目标文件夹：mkdir demo-websocket
 3. [cmder]初始化项目：npm init
@@ -43,9 +43,9 @@ body部分添加 
 ```
 13. 刷新网页 http://localhost:5000/ 验证样式得到了应用。
 
-##第二部分
+## 第二部分
 
-###安装和测试socket.io库
+### 安装和测试socket.io库
 1. [cmder]Web服务器端安装：nom install socket.io --save
 2. [Atom]更新根目录下index.js文件：
 a. 头部添加引用：
@@ -76,7 +76,7 @@ var socket = io.connect('http://localhost:5000');
 ```
 5. 刷新网页 http://localhost:5000/ 可以看到Web服务器控制台记录下每次不同的socket.id。
 
-###构建ChatApp主体
+### 构建ChatApp主体
 1. [Atom]更新index.html文件，在body部分添加如下容器定义：
 ```
  <div id="mario-chat"> 
@@ -118,7 +118,7 @@ output socket.on('chat', function(data){ 
 ```
 5. 分别打开两个网页到 http://localhost:5000/ ，验证基本聊天功能。
 
-###添加聊天状态
+### 添加聊天状态
 1. [Atom]更新index.html，在outpu容器下添加如下容器：
 ```
  <div id="feedback"></div>
